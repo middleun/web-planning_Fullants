@@ -17,6 +17,8 @@
 
    
 
+   
+
    <!-- font awesome cdn link -->
    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
    
@@ -48,14 +50,16 @@
          <!-- end of center of header -->
       </header>
       <!-- end of header -->
-      <section id="bannerSec">
+      <section id="bannerSec" class="section">
          <div class="banner-overlay"></div>
          <div class="banner-con">
             <div class="banner-tag"></div>
-            <div class="banner-btn"></div>
+            <a class="banner-btn button"></a>
          </div>
       </section>
-      <section id="sloganSec">
+      <!-- end of banner section -->
+
+      <section id="sloganSec" class="section">
          <div class="center">
             <div class="slogan-tit">
                <h1>Full of Plants Anywhere</h1>
@@ -63,6 +67,36 @@
             </div>
          </div>
       </section>
+      <!-- end of slogan section -->
+      <section id="categorySec" class="section">
+         <div class="category-grid">
+            <div class="category-item plants">
+               <img src="./img/category_img_1.png" alt="식물 상품 대표이미지">
+               <a href="#" class="category-btn button">식물구매</a>
+            </div>
+            <div class="category-item pots">
+               <img src="./img/category_img_2.png" alt="화분 상품 대표이미지">
+               <a href="#" class="category-btn button">화분구매</a>
+            </div>
+            <div class="category-item tools">
+               <img src="./img/category_img_3.png" alt="가드닝도구 상품 대표이미지">
+               <a href="#" class="category-btn button">가드닝도구구매</a>
+
+            </div>
+         </div>
+
+      </section>
+      <!-- end of category section -->
+
+      <section id="reviewSec" class="section">
+         <div class="center">
+            <div class="review-tit title"></div>
+            <div class="review-con"></div>
+         </div>
+      </section>
+
+      
+
       
    </div>
    
