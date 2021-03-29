@@ -68,6 +68,8 @@
          </div>
       </section>
       <!-- end of slogan section -->
+
+
       <section id="categorySec" class="section">
          <div class="category-grid">
             <div class="category-item plants">
@@ -84,14 +86,35 @@
 
             </div>
          </div>
-
       </section>
       <!-- end of category section -->
 
+
       <section id="reviewSec" class="section">
          <div class="center">
-            <div class="review-tit title"></div>
-            <div class="review-con"></div>
+            <div class="review-tit title">
+               <h1>sns Review</h1>
+            </div>
+            <!-- end of review title -->
+            <div class="review-con">
+               <div class="review-slider">
+                  <div class="review-img">
+                     <img src="./img/review_img_1.png" alt="sns 후기 이미지">
+                     <img src="./img/review_img_1.png" alt="sns 후기 이미지">
+                     <img src="./img/review_img_1.png" alt="sns 후기 이미지">
+                     <img src="./img/review_img_1.png" alt="sns 후기 이미지">
+                     <img src="./img/review_img_1.png" alt="sns 후기 이미지">
+                     <img src="./img/review_img_1.png" alt="sns 후기 이미지">
+                  </div>
+                  <!-- end of review img box -->
+               </div>
+               <!-- end of review slider -->
+               <div class="review-arrow">
+                  <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                  <button class="next"><i class="fas fa-chevron-right"></i></button>
+               </div>
+            </div>
+            <!-- end of review contents -->
          </div>
       </section>
 
@@ -108,8 +131,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
+
 <!-- main js  -->
 <script src="js/custom.js"></script>
+
+<!-- slider js -->
+<script src="js/slider.js"></script>
 
 
 </html>
