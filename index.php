@@ -12,6 +12,9 @@
    <!-- style css -->
    <link rel="stylesheet" href="css/style.css">
 
+   <!-- media css -->
+   <link rel="stylesheet" href="css/media.css">
+
    
 
    <!-- font awesome cdn link -->
@@ -21,7 +24,7 @@
 <body>
 
    <div class="wrap">
-      <div id="header">
+      <header id="header">
          <div class="center">
             <div class="top-logo">
                <img src="./img/top_logo.png" alt="Fullants 로고 이미지">
@@ -43,8 +46,26 @@
 
          </div>
          <!-- end of center of header -->
-      </div>
+      </header>
+      <!-- end of header -->
+      <section id="bannerSec">
+         <div class="banner-overlay"></div>
+         <div class="banner-con">
+            <div class="banner-tag"></div>
+            <div class="banner-btn"></div>
+         </div>
+      </section>
+      <section id="sloganSec">
+         <div class="center">
+            <div class="slogan-tit">
+               <h1>Full of Plants Anywhere</h1>
+               <h2>어디서나 식물과 함께하는 생활을 위해</h2>
+            </div>
+         </div>
+      </section>
+      
    </div>
+   
    
       
    
