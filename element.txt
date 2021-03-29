@@ -1,0 +1,29 @@
+
+//COLOR
+메인컬러 
+1. 포인트 
+#004d26
+
+2. 베이스
+#B3CABE 
+#e6ede9
+
+
+//FONTAWESOME
+1. 식물관련
+fas fa-leaf
+fas fa-seeding/
+fas fa-sun
+water :  fas fa-tint 
+temperature : fas fa-thermometer-half 
+
+2. 유저관련
+fas fa-user
+fas fa-shopping-cart
+fas fa-search
+
+3. contact관련
+fas fa-phone
+fas fa-comment
+
+ 

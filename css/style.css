@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{--main-color:#004d26;}
+:root{--sub-color:#B3CABE;}
+
+/*************
+Header Style  
+**************/
+#header{position:fixed; width:100%; height:100px; _background:var(--main-color); display:flex; }
+#header .center{display:flex; justify-content: space-between; align-items: center;}
+#header .top-logo{position:relative; _width:20%;height:100%; display:block; overflow:hidden;
+text-align: center; }
+#header .top-logo img{height:100%;}
+
+#header .top-nav{width:60%; height:100%;display: flex; _align-items: center;}
+#header .top-nav ul{width:100%;display:flex; align-items: center; justify-content: space-evenly;}
+#header .top-nav ul li{_width:25%; text-align: center; font-family:'Noto Sans KR' ; font-weight: 500;font-size:18px; 
+transition: all 0.4s;}
+#header .top-nav ul li a:after{content:''; display:block; box-sizing:border-box; width:0%;transition: all 0.4s;}
+#header .top-nav ul li:hover a,
+#header .top-nav ul li a.active{color:var(--main-color);}
+#header .top-nav ul li:hover a:after,
+#header .top-nav ul li a.active:after{width:100%; height:2px; bottom:-10px;
+background: var(--main-color);}
+
+#header .top-icon{width:20%; height:100%; display: flex; _align-items: center;}
+#header .top-icon ul{width:100%;display:flex; align-items: center; justify-content: center; }
+#header .top-icon ul li{width:30%; text-align: center;}
+
+#header .top-icon ul li a i{font-size:25px;}
