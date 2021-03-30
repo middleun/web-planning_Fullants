@@ -14,9 +14,6 @@
 
    <!-- media css -->
    <link rel="stylesheet" href="css/media.css">
-
-   
-
    
 
    <!-- font awesome cdn link -->
