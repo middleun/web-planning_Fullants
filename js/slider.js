@@ -1,48 +1,62 @@
 $(function(){
-    let current=0;
-    let timer;
-    const imgs=$(".review-img img");
-    // let indicators;
-    console.log(imgs);
+    let currentIdx=0;
 
-    // 슬라이드 실행 함수
-    function slider(eq){
-        $(".review-img").animate({left:-100*eq+"%"}, 200);
-        current=eq;
-        
-    }
-    // console.log(slider(0));
+    let winWidth=$(window).width();
+    let itemLength=0;
+    let itemWidth=0;
+    let viewSlide=0;
+    let firstItem=$(".slide-item:first-child");
+    let lastItem=$(".slide-item:last-child");
+    let cloneFirst=$(firstItem).clone();
+    let cloneLast=$(lastItem).clone();
+    // console.log(firstItem);
 
     
-    
-    // 자동실행 함수
-    function autoPlay(){
-        timer=setInterval(function(){
-            let slideIdx=(current+1)%imgs.length;
-            slider(slideIdx);
-        },3000);
-    }
-    
+    itemLength=$(".slide-item").length;
+    $(".slide-box").width($(".slide-item").outerWidth()*itemLength);
+    itemWidth=$(".slide-box").outerWidth() / itemLength;
+    $(".slide-item").outerWidth(itemWidth);
 
+    // console.log(itemWidth);
 
-    // slide move when click arrow
-    $(".review-arrow button").click(function(){
-        if($(this).hasClass("prev")){
-            if(current==0){
-                return false;
+    // slide start 
+    function slideStart(eq){
+        $(".slide-box").animate({left:itemWidth * eq + 'px'},  200);
+        currentIdx=eq;
+    };
+    // console.log(currentIdx);
+
+    // prev, next button click
+    $(".slide-btn button").click(function(){
+        if($(this).hasClass("next")){
+            if(currentIdx === itemLength-1){
+                // return false;
+                $(".slide-box").append(cloneFirst);
             }else{
-                slider(current-1);
+                slideStart(currentIdx -1);
             }
+
         }else{
-            if(current>=imgs.length-1){
-                return false;
+            if(currentIdx === 0){
+                // return false;                
+
             }else{
-                slider(current+1);
+                slideStart(currentIdx +1);
             }
-        }
+        }        
     });
 
-    autoPlay();
+
+
+
+
+
+
+
+
+
+    slideStart(currentIdx);
+    
    
 
 });

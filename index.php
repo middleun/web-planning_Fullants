@@ -90,33 +90,48 @@
       <!-- end of category section -->
 
 
-      <section id="reviewSec" class="section">
+      <section id="slideSec" class="section">
          <div class="center">
-            <div class="review-tit title">
+            <div class="slide-tit title">
                <h1>sns Review</h1>
             </div>
             <!-- end of review title -->
-            <div class="review-con">
-               <div class="review-slider">
-                  <div class="review-img">
-                     <img src="./img/review_img_1.png" alt="sns 후기 이미지">
-                     <img src="./img/review_img_1.png" alt="sns 후기 이미지">
-                     <img src="./img/review_img_1.png" alt="sns 후기 이미지">
-                     <img src="./img/review_img_1.png" alt="sns 후기 이미지">
-                     <img src="./img/review_img_1.png" alt="sns 후기 이미지">
-                     <img src="./img/review_img_1.png" alt="sns 후기 이미지">
+            <div class="slide-wrap">
+               <div class="slide-con">
+                  <div class="slide-box clear">
+                     <div class="slide-item">
+                        <img src="./img/slide_img_1.png" alt="sns 후기 이미지">
+                     </div>
+                     <div class="slide-item">
+                        <img src="./img/slide_img_1.png" alt="sns 후기 이미지">
+                     </div>
+                     <div class="slide-item">
+                        <img src="./img/slide_img_1.png" alt="sns 후기 이미지">
+                     </div>
+                     <div class="slide-item">
+                        <img src="./img/slide_img_1.png" alt="sns 후기 이미지">
+                     </div>
+                     <div class="slide-item">
+                        <img src="./img/slide_img_1.png" alt="sns 후기 이미지">
+                     </div>
+                     <div class="slide-item">
+                        <img src="./img/slide_img_1.png" alt="sns 후기 이미지">
+                     </div>
+                     
                   </div>
-                  <!-- end of review img box -->
+                  <!-- end of slide img box -->
                </div>
-               <!-- end of review slider -->
-               <div class="review-arrow">
-                  <button class="prev"><i class="fas fa-chevron-left"></i></button>
-                  <button class="next"><i class="fas fa-chevron-right"></i></button>
+               <!-- end of slide container -->
+               <div class="slide-btn">
+                  <button type="button" class="prev"><i class="fas fa-chevron-left"></i></button>
+                  <button type="button" class="next"><i class="fas fa-chevron-right"></i></button>
                </div>
+               <!-- end of slide button -->
             </div>
-            <!-- end of review contents -->
+            <!-- end of slide wrap -->
          </div>
       </section>
+      <!-- end of slide section -->
 
       
 
