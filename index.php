@@ -49,8 +49,10 @@
       <!-- end of header -->
       <section id="bannerSec" class="section">
          <div class="banner-overlay"></div>
-         <div class="banner-con">
-            <div class="banner-tag"></div>
+         <div class="banner-grid">
+            <div class="banner-tag item">
+
+            </div>
             <a class="banner-btn button"></a>
          </div>
       </section>
