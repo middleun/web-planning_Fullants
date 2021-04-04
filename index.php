@@ -98,7 +98,7 @@
             <div class="slide-wrap">
                <div class="slide-con">
                   <div class="slide-box clear">
-                     <div class="slide-item">
+                     <div class="slide-item first">
                         <img src="./img/slide_img_1.png" alt="sns 후기 이미지">
                      </div>
                      <div class="slide-item">
@@ -151,6 +151,7 @@
 
 <!-- slider js -->
 <script src="js/slider.js"></script>
+
 
 
 </html>

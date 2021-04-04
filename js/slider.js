@@ -1,133 +1,65 @@
 $(function(){
-    let slideCon=$(".slide-con");
-    let slideBox=$(".slide-box");
-    let slide=$(".slide-box .slide-item");
-    // let slideWidth=513.75;
-    let newSlides;
 
-    let currentIdx=0;
-    let winWidth=$(window).width();
+   const slideBox = $(".slide-box");
+   const slideItem = $(".slide-item");
+   const btnNext = $(".slide-btn button.next");
+   const btnPrev = $(".slide-btn button.prev");
+
+   let slideLength=0; // 초기화 필수
+   let slideWidth=0;
+   let slideSpeed = 200;
+   currentIdx=0;
+
+    // slideBox, slideItem의 width 설정
+    slideLength = slideItem.length; // slide갯수
+    $(slideBox).width($(slideItem).outerWidth() * (slideLength+2)); // slide-box의 넓이
+    slideWidth=$(slideBox).outerWidth() / (slideLength+2);// slide의 넓이 ( +2 : 앞뒤로 clone붙인 만큼 갯수+)
+    $(slideItem).outerWidth(slideWidth);
+    // console.log($(slideBox).width());
+
+    var firstSlide=$(".slide-item.first");
+    var firstClone = $(firstSlide).clone().addClass("clone");
+   //  var secondSlide =$(slideBox).children().eq(1);
+   //  var secondClone=$(secondSlide).clone().addClass("clone");
+    $(slideBox).append(firstClone);
+   //  $(firstSlide).remove();
     
-    let itemLength=0;
-    let itemWidth=0;
-    let viewSlide=3;
-    // let firstItem=$(".slide-item:first-child");
+
+   // console.log(firstSlide);
+   // console.log(firstClone);
+
+    function slideMove(){
+      var currentIdx=0;
+      
+      // setInterval(function(){
+         $(slideBox).animate({left:-slideWidth*(currentIdx+1)+"px"}, slideSpeed);
+
+         currentIdx++;
+
+         if(currentIdx === (slideLength)){
+            setTimeout(function(){
+               $(slideBox).animate({left:-slideWidth*(currentIdx+1)+"px"}, 0);
+               
+               $(slideBox).animate({left:0},0)
+            }, 201)
+            currentIdx=0;
+         }
+      // },3000);     
+
+      $(btnNext).click(function(){
+         slideMove(currentIdx+1);
+      }); 
+   } 
+    
+      
+     
    
-    // let cloneFirst=$(firstItem).clone();
-    
-    // console.log(firstItem);
-// 클론하고 지우고 뒤에 붙이고
-    
-    itemLength=$(slide).length;
-    $(slideBox).width($(slide).outerWidth()*(itemLength + 2));
-    itemWidth=$(slideBox).outerWidth() / (itemLength+2);
-    $(slide).outerWidth(itemWidth);
-
-   
-    
-    // 복사본 생성
-    let firstItem=$(slideBox).find(".slide-item:nth-child(1)");
-    let cloneFirst=firstItem.clone().addClass("clone");
-    let lastItem=$(slideBox).find(".slide-item:nth-child(6)");
-    let cloneLast=lastItem.clone().addClass("clone");
-    // let cloneSlide=slide.clone().addClass("clone");
-    // console.log(cloneFirst);
-    // slideBox.append(firstItem.clone().addClass("clone"));
-    // slideBox.prepend(lastItem.clone().addClass("clone"));
-    cloneFirst.insertAfter(lastItem);
-    cloneLast.insertBefore(firstItem);
-
-    // 슬라이드 가로배열
-    function slideLayout(sw){
-        newSlides=$(".slide-con .slide-item");
-        newSlides.each(function(idx){
-            $(this).css({left:itemWidth*idx+"px" , width:sw + "px"})
-        });
-
-    }
-    slideLayout(itemWidth);
-
-    // 슬라이드 중앙 배치
-    function setSlideCen(){
-        slideMove = - itemWidth * (itemLength+2) +"px"
-        slideBox.animate({left:slideMove}, 200);
-    }
-    setSlideCen();
-
-    // slide start 
-    function slideStart(n){
-        $(slideBox).animate({left:-itemWidth * n + 'px'},  200);
-        currentIdx=n;      
-        // if(currentIdx > 0){
-        //     $(firstItem).remove();
-        //     $(".slide-box").append(cloneFirst);
-        //         $(".slide-box").css("left","0");               
-
-    };     
-
-    $(".slide-btn button").click(function(){
-        if($(this).hasClass("prev")){
-            
-            slideStart(currentIdx -1);
-        }else{
-            
-            slideStart(currentIdx +1);
-        }
-    });
-    
-
-    // $(firstItem).remove();
-    // $(".slide-box").append(cloneFirst);
-    
-    // prev, next button click
-    // $(".slide-btn button").click(function(){
-    //     // next버튼 클릭했을 때
-    //     if($(this).hasClass("next")){
-    //         if(currentIdx === -itemLength + viewSlide){
-    //             return false;                         
-                       
-                                               
-    //         }else{
-    //             slideStart(currentIdx -1);                               
-
-    //         }$(firstItem).remove();
-    //         // $(".slide-box").css("left","0");
-            
-    //         $(".slide-box").append(cloneFirst);
-    //         //prev 버튼 클릭했을 때 
-    //     }else{
-    //         if(currentIdx === 0){
-    //             return false;   
-    //             // $(".slide-box").append(cloneLast);      
-
-
-    //         }else{
-    //             slideStart(currentIdx +1);
-    //         }
-    //     }        
-    // });
 
     
 
-    // function loopSlide(){
-    //     let firstItem=$(slide).first();
-    //     let cloneFirst=$(firstItem).clone();
-    //     let lastItem=$(".slide-item").last();
-    //     let cloneLast=$(lastItem).clone(); 
-    //     // currentIdx =0; 처음 item
-    //     if(currentIdx == 0){
-    //         $(".slide-box").prepend(CloneLast);
-    //     }
-    //     if(currentIdx == itemLength-1){
-    //         $(firstItem).remove();
-    //         $(".slide-box").append(CloneFirst);
-    //     }
-
-    // }
+   slideMove();
 
 
-    slideStart(currentIdx);
-    
-   
+
 
 });

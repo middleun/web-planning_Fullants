@@ -70,7 +70,7 @@ slide Section Style
 #slideSec .slide-wrap .slide-con{width:90%; height:100%; position:relative; overflow:hidden; margin:0 auto;}
 #slideSec .slide-wrap .slide-con .slide-box{width:100%;height:100%; position:absolute; }
 #slideSec .slide-wrap .slide-con .slide-box .slide-item{float:left; width:33.33%; height:100%; background:var(--main-color); box-sizing: border-box;
-padding:10px; display:flex; justify-content: center; _flex-wrap: nowrap;}
+padding:10px; _display:flex; _justify-content: center; position:relative; display:table; }
 #slideSec .slide-wrap .slide-con .slide-box .slide-item img{height:100%; top:0; _margin:0 20px; }
 /* #slideSec .slide-wrap .slide-con .slide-box .slide-item:nth-child(1){margin-left:0;} */
 #slideSec .slide-wrap .slide-con .slide-box .slide-item:nth-child(2){background:darkcyan;}
