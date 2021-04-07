@@ -1,3 +1,9 @@
+@media screen and (max-width:1440px){
+    /* banner section */
+    #bannerSec .banner-grid .banner-tag:nth-child(5) h3{font-size:40px;}
+
+}
+
 @media screen and (max-width:750px){
 
 }
