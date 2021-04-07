@@ -4,6 +4,21 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Fullants</title>
+   <meta name="keywords" content="식물, 반려식물, 식물판매, 식물관리">
+   <meta name="title" content="식물과 함께하는 생활을 위해, Fullants">
+   <meta name="subject" content="식물 판매">
+   <meta name="description" content="반려식물의 선택과 구매, 관리까지. 식물과 함께하는 생활, Fullants가 책임지겠습니다.">
+   <meta name="author" content="eunallaco@gmail.com, 이중은">
+   <meta name="robots" content="index,follow">
+   <meta name="copyright" content="copyrights 2021 LEEJUNGEUN.">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://middleun.dothome.co.kr/fullants">
+   <meta property="og:title" content="식물과 함께하는 생활을 위해, Fullants">
+   <meta property="og:description" content="반려식물의 선택과 구매, 관리까지. 식물과 함께하는 생활, Fullants가 책임지겠습니다.">
+   <meta property="og:image" content="http://middleun.dothome.co.kr/fullants/img/top_logo.png">
+   <meta property="og:image:width" content="1200">
+   <meta property="og:image:height" content="630">
+
    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
 
    <!-- reset style css -->

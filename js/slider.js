@@ -31,24 +31,26 @@ $(function(){
     function slideMove(){
       var currentIdx=0;
       
-      // setInterval(function(){
+      setInterval(function(){
          $(slideBox).animate({left:-slideWidth*(currentIdx+1)+"px"}, slideSpeed);
 
          currentIdx++;
 
-         if(currentIdx === (slideLength)){
+         if(currentIdx === (slideLength-3)){
             setTimeout(function(){
-               $(slideBox).animate({left:-slideWidth*(currentIdx+1)+"px"}, 0);
+               $(slideBox).animate({left:-slideWidth*(currentIdx+1)+"px"},0);
                
                $(slideBox).animate({left:0},0)
-            }, 201)
+            }, slideSpeed+1)
             currentIdx=0;
-         }
-      // },3000);     
+            $(btnNext).click(function(){
+               slideMove(currentIdx+1);
+            }); 
 
-      $(btnNext).click(function(){
-         slideMove(currentIdx+1);
-      }); 
+         }
+      },3000);     
+
+     
    } 
     
       
