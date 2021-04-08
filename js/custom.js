@@ -11,16 +11,22 @@ $(function(){
         $(this).addClass("active");
 
     });
-       
-        
+
+
+    // header smaller when scroll event
+    const header = $("#header");
+    const sloTop=$("#sloganSec").offset().top;
+    // console.log(sloTop);
+    $(window).scroll(function(){
+        let scrollTop = $(window).scrollTop();
+        // console.log(scrollTop);
+        if(sloTop <= scrollTop){
+            $(header).css({"height":"80px"});
+        }else{
+            $(header).css({"height":"100px"});
+
+        }
+    });
     
-    // const topIcon=$(".top-icon ul li")
-    // $(topIcon).click(function(){
-    //     $(this).toggleClass("click");
-    //     $(topIcon).removeClass("active");
-    //     $(this).addClass("active");
-        
-    // });
-
-
+    
 });

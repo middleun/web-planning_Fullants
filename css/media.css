@@ -18,6 +18,8 @@
 
 
 @media screen and (max-width:790px){
+
+    #header{height:80px;}
     /* banner section */
     #bannerSec .banner-con .banner-tag:nth-child(1){margin-left:-20%;}
 

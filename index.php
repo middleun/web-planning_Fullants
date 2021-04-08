@@ -65,6 +65,25 @@
             <!-- end of center of header -->
         </header>
         <!-- end of header -->
+        <div class="sub-nav">
+            <div class="center">
+                <ul>
+                    <li>
+                        <img src="" alt="">
+                        <a href="#">식물</a>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                        <a href="#">화분</a>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                        <a href="#">가드닝도구</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
         <section id="bannerSec" class="section">
             <div class="banner-overlay"></div>            
             <div class="banner-con">
