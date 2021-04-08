@@ -36,31 +36,29 @@ Banner Section Style
 background-size: cover; overflow:hidden; }
 #bannerSec .banner-overlay{display:block;width:100%; height:100%; top:0; left:0;
 position:absolute;background:rgba(0, 0, 0, 0.445);z-index:2;}
-#bannerSec .banner-grid{position:absolute; width:100%; height:100%; max-width: 70%; left:50%; transform:translateX(-50%);
-display:grid; grid-template-columns: repeat(3,minmax(33.33%,auto));
-grid-template-rows: repeat(3, minmax(33.33%,auto)); margin:0 auto; z-index:10;}
-#bannerSec .banner-grid .banner-tag{display:flex; justify-content: center;align-items: center;}
-#bannerSec .banner-grid .banner-tag:nth-child(2){z-index:4; transform:scale(1.3); align-items: flex-end; justify-content: flex-start;}
-#bannerSec .banner-grid .banner-tag:nth-child(5){z-index:1; transform:scale(1.5);}
-#bannerSec .banner-grid .banner-tag:nth-child(6){z-index:2; transform:scale(1.2); align-items: flex-start;justify-content: flex-start;padding-left: 20%;}
-#bannerSec .banner-grid .banner-tag:nth-child(7){z-index:3; transform:scale(1.3); align-items: flex-start;justify-content: center;}
-#bannerSec .banner-grid .banner-tag:nth-child(8){z-index:1;}
+#bannerSec .banner-con{position:absolute; width:100%; height:100%; max-width: 70%; left:50%; transform:translateX(-50%); margin:0 auto; z-index:10;
+display: flex; flex-direction: column; justify-content: center; align-items: center;}
+#bannerSec .banner-con .banner-tag{width:auto; display:flex; justify-content: center; align-items: center; color:#fff;}
+#bannerSec .banner-con .banner-tag:nth-child(1){position:absolute; top:30%; transform:translateY(-40%);margin-left:-40%;}
+#bannerSec .banner-con .banner-tag:nth-child(2){position:absolute; top:65%; transform:translateY(-65%);right:20%;}
+#bannerSec .banner-con .banner-tag:nth-child(3){top:50%;;}
+#bannerSec .banner-con .banner-tag:nth-child(4){position:absolute;bottom:23%; margin-left:-30%;}
 
-#bannerSec .banner-grid .banner-tag h3{color:#fff; font-size: 20px; transition: transform 0.5s;}
-#bannerSec .banner-grid .banner-tag h3:hover{transform:scale(1.05)};
-#bannerSec .banner-grid .banner-tag:nth-child(2) h3{font-size:35px; color:rgba(255, 255, 255, 0.781);}
-#bannerSec .banner-grid .banner-tag:nth-child(5) h3{font-size:50px; }
-#bannerSec .banner-grid .banner-tag:nth-child(6) h3{font-size:30px; color:rgba(255, 255, 255, 0.774);}
-#bannerSec .banner-grid .banner-tag:nth-child(7) h3{font-size:40px; color:rgba(255, 255, 255, 0.877);}
+#bannerSec .banner-con .banner-tag h3{font-size:45px; transition:all 0.4s;}
+#bannerSec .banner-con .banner-tag:nth-child(1) h3{color:rgba(255, 255, 255, 0.74);}
+#bannerSec .banner-con .banner-tag:nth-child(2) h3{font-size:40px;color:rgba(255, 255, 255, 0.692);}
+#bannerSec .banner-con .banner-tag:nth-child(3) h3{font-size:60px;}
+#bannerSec .banner-con .banner-tag:nth-child(4) h3{font-size:35px; color:rgba(255, 255, 255, 0.842);}
+#bannerSec .banner-con .banner-tag h3:hover{transform: scale(1.1);}
 
 
-#bannerSec .banner-grid .banner-tag:nth-child(8) a.banner-btn{width:200px;}
-
+#bannerSec .banner-btn{position:absolute; z-index:10; width:100%; height:auto; bottom:20px; display: flex; justify-content: center; align-items: center; }
+#bannerSec .banner-btn a{width:200px; }
 
 /******************
 Slogan Section Style  
 *******************/
-#sloganSec{position:relative;width:100%; height:200px; background:var(--main-color); }
+#sloganSec{position:relative;width:100%; height:200px; background:var(--main-color); transition: all 0.4s; }
 #sloganSec .center{display:flex;}
 #sloganSec .slogan-tit{width:100%; display:flex; flex-direction: column; justify-content: center; align-items: center;
 color:#fff; }

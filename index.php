@@ -66,35 +66,23 @@
         </header>
         <!-- end of header -->
         <section id="bannerSec" class="section">
-            <div class="banner-overlay"></div>
-            <div class="banner-grid">
-                <div class="banner-tag">
-                </div>
+            <div class="banner-overlay"></div>            
+            <div class="banner-con">
                 <div class="banner-tag">
                     <h3>&#35;그늘에서잘자라는</h3>
                 </div>
-                <div class="banner-tag">                    
-                </div>
-                <div class="banner-tag">                    
-                </div>
-                <div class="banner-tag">
-                    <h3>&#35;미세먼지제거</h3>
-                </div>
                 <div class="banner-tag">
                     <h3>&#35;전자파차단</h3>
-                </div>
+                </div>         
+                <div class="banner-tag">
+                    <h3>&#35;미세먼지제거</h3>
+                </div>                
                 <div class="banner-tag">
                     <h3>&#35;잎이넓은</h3>
-                </div>
-                <div class="banner-tag">
-                    <a href="#" class="banner-btn button" title="식물 추천 바로가기 버튼">식물추천 바로가기</a>
-                </div>
-                <div class="banner-tag">
-                    
-                </div>
-
-
-                
+                </div>       
+            </div>
+            <div class="banner-btn">
+                <a href="#" class="button" title="식물 추천 바로가기 버튼">식물추천 바로가기</a>  
             </div>
         </section>
         <!-- end of banner section -->
