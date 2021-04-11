@@ -48,7 +48,7 @@
                 </div>
                 <div class="top-nav">
                 <ul>
-                    <li><a href="#">상품보기</a></li>
+                    <li class="click-nav"><a href="#">상품보기</a></li>
                     <li><a href="#">식물관리법</a></li>
                     <li><a href="#">고객센터</a></li>
                     <li><a href="#">자사소개</a></li>

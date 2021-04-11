@@ -20,6 +20,12 @@
 @media screen and (max-width:790px){
 
     #header{height:80px;}
+    /* #header .top-logo{order:1;} */
+    #header .top-nav ul{display:none;}
+    /* #header .top-nav ul li{font-size:16px;} */
+
+    .sub-nav{top:80px;}
+
     /* banner section */
     #bannerSec .banner-con .banner-tag:nth-child(1){margin-left:-20%;}
 
@@ -27,7 +33,7 @@
 
     /* slogan section */
     #sloganSec{height:100px; _margin:20px 0;}
-    #sloganSec .slogan-tit h1{font-size:40px;}
+    #sloganSec .slogan-tit h1{font-size:40px; letter-spacing:2px;}
     #sloganSec .slogan-tit h2{display:none;}
 
     
