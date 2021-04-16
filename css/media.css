@@ -20,9 +20,8 @@
 @media screen and (max-width:790px){
 
     #header{height:80px;}
-    /* #header .top-logo{order:1;} */
-    #header .top-nav ul{display:none;}
-    /* #header .top-nav ul li{font-size:16px;} */
+    #header .top-bar{display:flex; flex-direction: column; justify-content: center;}
+    #header .top-nav{display:none;}
 
     .sub-nav{top:80px;}
 

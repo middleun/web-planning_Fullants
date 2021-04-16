@@ -44,6 +44,11 @@
         <!--header  -->
         <header id="header">
             <div class="center">
+                <div class="top-bar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <div class="top-logo">
                 <img src="./img/top_logo.png" alt="Fullants 로고 이미지">
                 </div>
