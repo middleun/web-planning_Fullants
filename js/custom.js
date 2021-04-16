@@ -39,20 +39,19 @@ $(function(){
     // sub navigation show
     let subNav = $(".sub-nav");
     let clickNav = $(".top-nav ul li.click-nav");
+    
     $(subNav).hide();
     // console.log(clickNav);
 
-    $(clickNav).on("click",function(){
-        // $(this).toggleClass("click")
-        if ($(this).hasClass("click")){
-            $(subNav).slideDown();
-
-        }else{
-            $(subNav).slideUp();
-
-        }
-        
+    $(clickNav).click(function(e){
+        e.stopPropagation();
+        $(subNav).slideToggle();
     });
+    
+    $(document).click(function(){
+        $(subNav).slideUp();
+    });
+
     
     
 });

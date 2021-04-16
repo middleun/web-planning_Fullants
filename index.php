@@ -5,10 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Fullants</title>
         <!-- seo -->
-        <meta name="keywords" content="식물, 반려식물, 식물판매, 식물관리, 식물추천">
+        <meta name="keywords" content="반려식물, 식물, 식물키우기, 분갈이, 식물인테리어">
         <meta name="title" content="식물과 함께하는 생활을 위해, Fullants">
         <meta name="subject" content="식물 판매">
-        <meta name="description" content="반려식물의 선택과 구매, 관리까지. 식물과 함께하는 생활, Fullants가 책임지겠습니다.">
+        <meta name="description" content="반려식물의 선택과 구매, 관리까지 도와주는 반려식물 판매 사이트 Fullants입니다. 식물키우기가 어렵거나 분갈이 시기가 고민될 때, 
+        식물인테리어를 원할 때는 Fullants를 찾아주세요.">
         <meta name="author" content="eunallaco@gmail.com, 이중은">
         <meta name="robots" content="index,follow">
         <meta name="copyright" content="copyrights 2021 LEEJUNGEUN.">
