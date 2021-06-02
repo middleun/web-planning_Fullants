@@ -1,16 +1,69 @@
+
+// top-navigation click event
+const topNav = document.querySelectorAll(".top-nav ul li");
+// const topIcon = document.querySelector(".top-icon ul li");
+const activeClass = "active";
+const subNav = document.querySelector(".sub-nav");
+// console.log(topNav);
+
+function activeToggle(event){
+    event.prventDefault;
+    const topNavTarget = event.target;
+    const topNavLi = topNavTarget.parentNode;
+    topNavLi.classList.toggle(activeClass);
+    // console.log(topNavTarget.parentNode); 
+}
+
+// function subNavSlide(){
+//     subNav.style.height = "100px";
+// }
+
+for (let i = 0; i < topNav.length; i++){    
+    topNav[i].addEventListener("click", activeToggle);
+    // topNav[0].addEventListener("click", subNavSlide);
+         
+}
+
+
+
+
+// let subNav = $(".sub-nav");
+    // let clickNav = $(".top-nav ul li.click-nav");
+    
+    // $(subNav).hide();
+    // // console.log(clickNav);
+
+    // $(clickNav).click(function(e){
+    //     e.stopPropagation();
+    //     $(subNav).slideToggle();
+    // });
+    
+    // $(document).click(function(){
+    //     $(subNav).slideUp();
+    // });
+
+
 $(function(){
 
     // top-navigation click event
+    // const topNav = document.querySelector(".top-nav ul li");
+    // const topIcon = document.querySelector(".top-icon ul li");
+    // const topNav = $(".top-nav ul");
+    // const topIcon = $(".top-icon ul li");
+    // console.log(topNav);
 
-    const topNav=$(".top-nav ul li")
-    const topIcon=$(".top-icon ul li")
+    
+    // $(topNav).on("click",function(){
+    //     $(this).toggleClass("click");
+    //     $(topNav).removeClass("active");
+    //     $(this).addClass("active");
+    // });
 
-    $(topNav, topIcon).on("click",function(){
-        $(this).toggleClass("click");
-        $(topNav, topIcon).removeClass("active");
-        $(this).addClass("active");
-
-    });
+    // $(topIcon).on("click",function(){
+    //     $(this).toggleClass("click");
+    //     $(topIcon).removeClass("active");
+    //     $(this).addClass("active");
+    // });
 
 
     // header smaller when scroll event
@@ -37,20 +90,20 @@ $(function(){
     });
 
     // sub navigation show
-    let subNav = $(".sub-nav");
-    let clickNav = $(".top-nav ul li.click-nav");
+    // let subNav = $(".sub-nav");
+    // let clickNav = $(".top-nav ul li.click-nav");
     
-    $(subNav).hide();
-    // console.log(clickNav);
+    // $(subNav).hide();
+    // // console.log(clickNav);
 
-    $(clickNav).click(function(e){
-        e.stopPropagation();
-        $(subNav).slideToggle();
-    });
+    // $(clickNav).click(function(e){
+    //     e.stopPropagation();
+    //     $(subNav).slideToggle();
+    // });
     
-    $(document).click(function(){
-        $(subNav).slideUp();
-    });
+    // $(document).click(function(){
+    //     $(subNav).slideUp();
+    // });
 
     
     
