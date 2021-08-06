@@ -126,16 +126,16 @@
         <section id="categorySec" class="section">
             <div class="category-grid">
                 <div class="category-item plants">
-                <img src="./img/category_img_1.png" alt="식물 상품 대표이미지">
-                <a href="#" class="category-btn button" title="식물 구매 바로가기 버튼">식물구매</a>
+                    <img src="./img/category_img_1.png" alt="식물 상품 대표이미지">
+                    <a href="#" class="category-btn button" title="식물 구매 바로가기 버튼">식물구매</a>
                 </div>
                 <div class="category-item pots">
-                <img src="./img/category_img_2.png" alt="화분 상품 대표이미지">
-                <a href="#" class="category-btn button" title="화분 구매 바로가기 버튼">화분구매</a>
+                    <img src="./img/category_img_2.png" alt="화분 상품 대표이미지">
+                    <a href="#" class="category-btn button" title="화분 구매 바로가기 버튼">화분구매</a>
                 </div>
                 <div class="category-item tools">
-                <img src="./img/category_img_3.png" alt="가드닝도구 상품 대표이미지">
-                <a href="#" class="category-btn button" title="가드닝도구 구매 바로가기 버튼">가드닝도구구매</a>
+                    <img src="./img/category_img_3.png" alt="가드닝도구 상품 대표이미지">
+                    <a href="#" class="category-btn button" title="가드닝도구 구매 바로가기 버튼">가드닝도구구매</a>
                 </div>
             </div>
         </section>
@@ -145,40 +145,49 @@
         <section id="slideSec" class="section">
             <div class="center">
                 <div class="slide-tit title">
-                <h1>sns Review</h1>
+                    <h1>sns Review</h1>
                 </div>
                 <!-- end of review title -->
                 <div class="slide-wrap">
-                <div class="slide-con">
-                    <div class="slide-box clear">
-                        <div class="slide-item first">
-                            <img src="./img/slide_img_1.png" alt="sns 후기 이미지">
+                    <div class="slide-box">
+                        <div class="slide-contents clear">
+                            <div class="slide-item first">
+                                <img src="./img/slide_img_1.png" alt="sns 후기 이미지">
+                            </div>
+                            <div class="slide-item">
+                                <img src="./img/slide_img_1.png" alt="sns 후기 이미지">
+                            </div>
+                            <div class="slide-item">
+                                <img src="./img/slide_img_1.png" alt="sns 후기 이미지">
+                            </div>
+                            <div class="slide-item">
+                                <img src="./img/slide_img_1.png" alt="sns 후기 이미지">
+                            </div>
+                            <div class="slide-item">
+                                <img src="./img/slide_img_1.png" alt="sns 후기 이미지">
+                            </div>
+                            <div class="slide-item">
+                                <img src="./img/slide_img_1.png" alt="sns 후기 이미지">
+                            </div>
+                            <div class="slide-item">
+                                <img src="./img/slide_img_1.png" alt="sns 후기 이미지">
+                            </div>
+                            <div class="slide-item">
+                                <img src="./img/slide_img_1.png" alt="sns 후기 이미지">
+                            </div>
+                            <div class="slide-item">
+                                <img src="./img/slide_img_1.png" alt="sns 후기 이미지">
+                            </div>
                         </div>
-                        <div class="slide-item">
-                            <img src="./img/slide_img_1.png" alt="sns 후기 이미지">
-                        </div>
-                        <div class="slide-item">
-                            <img src="./img/slide_img_1.png" alt="sns 후기 이미지">
-                        </div>
-                        <div class="slide-item">
-                            <img src="./img/slide_img_1.png" alt="sns 후기 이미지">
-                        </div>
-                        <div class="slide-item">
-                            <img src="./img/slide_img_1.png" alt="sns 후기 이미지">
-                        </div>
-                        <div class="slide-item">
-                            <img src="./img/slide_img_1.png" alt="sns 후기 이미지">
-                        </div>
-                        
+                        <!-- end of slide img box -->
                     </div>
-                    <!-- end of slide img box -->
-                </div>
-                <!-- end of slide container -->
-                <div class="slide-btn">
-                    <button type="button" class="prev"><i class="fas fa-chevron-left"></i></button>
-                    <button type="button" class="next"><i class="fas fa-chevron-right"></i></button>
-                </div>
-                <!-- end of slide button -->
+                    <!-- end of slide container -->
+                
+                    <div class="slide-btn">
+                        <button type="button" class="prev"><i class="fas fa-chevron-left"></i></button>
+                        <button type="button" class="next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <!-- end of slide button -->
                 </div>
                 <!-- end of slide wrap -->
             </div>

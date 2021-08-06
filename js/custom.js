@@ -10,10 +10,9 @@ function activeToggle(event){
     event.prventDefault;
     const topNavTarget = event.target;
     const topNavLi = topNavTarget.parentNode;
-    topNavLi.classList.toggle(activeClass);
-    // console.log(topNavTarget.parentNode); 
+    topNavLi.classList.remove(activeClass);
+    topNavTarget.classList.add(activeClass);
 }
-
 // function subNavSlide(){
 //     subNav.style.height = "100px";
 // }
@@ -21,9 +20,7 @@ function activeToggle(event){
 for (let i = 0; i < topNav.length; i++){    
     topNav[i].addEventListener("click", activeToggle);
     // topNav[0].addEventListener("click", subNavSlide);
-         
 }
-
 
 
 
@@ -78,14 +75,12 @@ $(function(){
             if(sloTop <= scrollTop){
                 $(header).css({"height":"80px","box-shadow":"1px 1px rgba(0, 0, 0, 0.109)"});
             }else{
-                $(header).css({"height":"100px", "box-sadow":"none"});
-    
+                $(header).css({"height":"100px", "box-sadow":"none"});    
             }
         }else{
             $(header).css({"height":"80px","box-shadow":"1px 1px rgba(0, 0, 0, 0.109)"});
             
         }
-
         
     });
 
